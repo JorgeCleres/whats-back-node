@@ -11,10 +11,10 @@ routes.post('/user', UserController.insert);
 
 routes.get('/user/:email', UserController.getUser)
 
-routes.get('/user', UserController.getAllUsers)
+routes.get('/users', UserController.getAllUsers)
 
 routes.post('/message', MessageController.sendMessage)
 
-routes.get('/message/:userId/:myId', MessageController.listAllMessages)
+routes.get('/messages/:userId/:myId', MessageController.listAllMessages)
 
 module.exports = routes
